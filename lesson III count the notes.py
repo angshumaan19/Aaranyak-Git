@@ -1,9 +1,9 @@
 j=int(input("Enter the number of notes"))
 
-note1=j//100
-note2=(j%100)//50
-note3=((j%100)%50)//10
-note4=(((j%100)%50)%10)//1
+note1=j/100
+note2=(j%100)/50
+note3=((j%100)%50)/10
+note4=(((j%100)%50)%10)/1
 
 print("the number of 100 notes are there in this number",note1)
 print("the number of 50 notes are there in this number",note2)
