@@ -1,3 +1,4 @@
+#outer loop and inner loop
 print("ATM cash dispenser")
 print("dispensing cash to customers\n")
 # initialize variables
