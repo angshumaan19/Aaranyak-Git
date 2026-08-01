@@ -15,13 +15,15 @@ def calculate_total(price, items):
 total_items=calculate_total(price_per_item,items_bought)
 # STEP:6
 rounded_items=round(total_items,2)
-print("total items =",rounded_items)
+print("total items cost=",rounded_items)
 # STEP:7
-amount=float(input("how many items did you buy"))
+amount=float(input("how much is the amount you paid\n"))
 # STEP:8
 def calculate_change(paid,total):
     t = paid - total
     return t
+retuned_change=calculate_change(amount,rounded_items)
+
 # STEP:9
 def thankyou(items):
     if items >= 5:
@@ -32,10 +34,11 @@ def thankyou(items):
 thank = thankyou(items_bought)
 
 print("====ART SUPPLIES RECEIPT====")
-print("price per item    :",price_per_item)
-print("items bought      :",items_bought)
-print("total items       :",rounded_items)
-print("amount            :",amount)
+print("price per item       :",price_per_item)
+print("items bought         :",items_bought)
+print("total items cost     :",rounded_items)
+print("total amount you gave:",amount)
+print("amount returned      :",retuned_change)
 print(thank)
 print("==============================")
 
